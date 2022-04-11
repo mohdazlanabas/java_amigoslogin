@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+<head>
+    <title>dashboard.html</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+    <h2>This is your Admin Dashboard</h2>
+    <h4>End of Demo, Thank You For Viewing This JAVA App.</h4>
+</div>
+</body>
+</html>
